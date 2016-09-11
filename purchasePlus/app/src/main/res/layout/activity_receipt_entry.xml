@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:longClickable="false">
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.xuan.myapplication.MainActivity">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.xuan.myapplication.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_Type"
+            android:id="@+id/textView_Type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:checkedButton="@+id/radioAppliance"
+            android:layout_height="wrap_content" >
+            <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal">-->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioAppliance"
+                android:id="@+id/radioAppliance"
+                android:layout_marginLeft="20dp"
+                android:longClickable="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioElectronics"
+                android:id="@+id/radioElectronics"
+                android:layout_marginLeft="20dp"
+                android:longClickable="true" />
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal">-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioClothes"
+                android:id="@+id/radioClothes"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioOthers"
+                android:id="@+id/radioOthers"
+                android:layout_marginLeft="20dp" />
+
+            <!--</LinearLayout>-->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_ItemName"
+            android:id="@+id/textView_ItemName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_ItemName"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_StoreName"
+            android:id="@+id/textView_StoreName"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_StoreName"
+            android:shadowColor="#d6d3d3"
+            android:inputType="text"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_PurchaseDate"
+            android:id="@+id/textView_PurchaseDate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="188dp"
+            android:id="@+id/datePicker"
+            android:layout_gravity="center_horizontal"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"
+            android:startYear="2016"
+            android:calendarViewShown="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_Amount"
+            android:id="@+id/textView_Amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText_PurchaseAmount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textView_RefundDay"
+            android:id="@+id/textView_RefundDay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 Days"
+                android:id="@+id/checkBox1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 Days"
+                android:id="@+id/checkBox2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90 Days"
+                android:id="@+id/checkBox3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" />
+        </GridLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_Webview"
+            android:text="@string/btnWebview" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/button_Cancel"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/button_Save"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

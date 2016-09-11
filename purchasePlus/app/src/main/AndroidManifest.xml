@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- new add splash page -->
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReceiptListActivity" />
+        <activity android:name=".ReceiptEntryActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news" />
+        <activity
+            android:name=".RssItemActivity"
+            android:label="@string/title_activity_rss_item" />
+        <activity
+            android:name=".ReciptListItemActivity"
+            android:label="@string/title_activity_recipt_list_item" />
+
+        <service
+            android:name=".RSSPullService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".RssFeedReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".dbContentProvider"
+            android:authorities="com.example.administrator.myapplication.itemInfoProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".GoogleStorageActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <receiver android:name=".AppWidget_Update">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget__update_info" />
+        </receiver>
+    </application>
+
+</manifest>

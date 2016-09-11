@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_receipt_entry_activity"
+        android:title="Receipt Entry"/>
+    <item android:id="@+id/menu_receiptlist_activity"
+        android:title="Receipt List"/>
+    <item android:id="@+id/menu_setting_activity"
+        android:title="Settings"/>
+    <item android:id="@+id/menu_rss_activity"
+        android:title="News"/>
+    <item android:id="@+id/menu_login_activity"
+        android:title="Log Out"/>
+</menu>

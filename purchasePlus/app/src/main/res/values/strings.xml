@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Purchase Plus</string>
+
+    <!-- activity_login -->
+    <string name="ac_login_btn">Log In</string>
+    <string name="ac_login_name">Please, enter your id...</string>
+    <string name="ac_login_password">Please, enter your password...</string>
+
+    <!-- activity_recipt_list -->
+    <string name="orderbyDate">Order by date</string>
+    <string name="contentDescription">Receipts</string>
+
+    <!-- activity_receipt_entry -->
+    <string name="ChoiceText">Choose one of the radio buttons below</string>
+    <string name="Sound">Sound</string>
+    <string name="Vibration">Vibration</string>
+    <string name="Silent">Silent</string>
+    <string name="Choose">Choose</string>
+    <string name="textView_Type">Item Type:</string>
+    <string name="textView_ItemName">Item Name:</string>
+    <string name="textView_StoreName">Store Name:</string>
+    <string name="textView_PurchaseDate">Purchase Date:</string>
+    <string name="textView_Amount">Purchase Amount:</string>
+    <string name="textView_RefundDay">Refund Days:</string>
+    <string name="radioAppliance">Appliance</string>
+    <string name="radioElectronics">Electronics</string>
+    <string name="radioClothes">Clothes</string>
+    <string name="radioOthers">Others</string>
+
+    <!-- activity_settings -->
+    <string name="securitySectionLabel">Security Settings:</string>
+    <string name="switchPassword">Password Enabled</string>
+
+    <string name="returnSectionLabel">Item Return Settings:</string>
+    <string name="returnToggleLabel">Return Notifications</string>
+    <string name="toggleReturn">ReturnDate Warning</string>
+    <string name="switch30">Default 30 Days</string>
+
+    <string name="receiptPage">Receipt Page</string>
+    <string name="receiptList">Saved Receipts</string>
+    <string name="settings">Settings Page</string>
+    <string name="logOut">Log Out</string>
+    <string name="imageViewBackground">imageViewBackground</string>
+    <string name="textViewTitle">Settings</string>
+    <string name="textView">Application is Loading....</string>
+    <string name="imageView">imageView</string>
+    <string name="btnWebview">Search Return Policy</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="newsTitle">Top News</string>
+    <string name="title_activity_rss_item">RssItemActivity</string>
+    <string name="title_activity_recipt_list_item">ReciptListItemActivity</string>
+    <string name="new_string">New</string>
+    <string name="open_string">Open</string>
+    <string name="save_string">Save</string>
+    <string name="saveToCloud">SAVE TO CLOUD</string>
+    <string name="readFromCloud">Read Cloud</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>
