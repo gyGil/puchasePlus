@@ -1,5 +1,5 @@
 # Purchase Plus
-> It provide servie for customers to manage their receipts in Android.
+> It provide service for customers to manage their receipts in Android.
 
 ### Used Technologies
 
